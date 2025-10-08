@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        /* Add some basic styling */
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Survey Form</h2>
+        <p>Please take a minute to complete this survey.</p>
+
+        <!-- Checklist -->
+        <label>What are your favorite hobbies? (Check all that apply)</label>
+        <input type="checkbox" id="hobby1" name="hobby" value="Reading">
+        <label for="hobby1">Reading</label><br>
+        <input type="checkbox" id="hobby2" name="hobby" value="Hiking">
+        <label for="hobby2">Hiking</label><br>
+        <input type="checkbox" id="hobby3" name="hobby" value="Coding">
+        <label for="hobby3">Coding</label><br>
+
+        <!-- Radio buttons -->
+        <label>How satisfied are you with our service?</label>
+        <input type="radio" id="satisfied1" name="satisfaction" value="Very Satisfied">
+        <label for="satisfied1">Very Satisfied</label><br>
+        <input type="radio" id="satisfied2" name="satisfaction" value="Satisfied">
+        <label for="satisfied2">Satisfied</label><br>
+        <input type="radio" id="satisfied3" name="satisfaction" value="Neutral">
+        <label for="satisfied3">Neutral</label><br>
+        <input type="radio" id="satisfied4" name="satisfaction" value="Dissatisfied">
+        <label for="satisfied4">Dissatisfied</label><br>
+
+        <!-- Textarea -->
+        <label>Any additional comments or feedback?</label>
+        <textarea id="comments" name="comments" rows="5" cols="30"></textarea>
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
