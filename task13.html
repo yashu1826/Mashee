@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas 2D Objects</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="400"></canvas>
+    <script>
+        
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = 'blue'; 
+        ctx.fillRect(50, 50, 150, 100); 
+
+    
+        ctx.beginPath(); 
+        ctx.arc(300, 100, 50, 0, Math.PI * 2); 
+        ctx.fillStyle = 'red'; 
+        ctx.fill(); 
+
+    
+        ctx.beginPath(); 
+        ctx.moveTo(400, 50); 
+        ctx.lineTo(500, 150); 
+        ctx.stroke(); 
+
+        
+        ctx.beginPath(); 
+        ctx.moveTo(550, 300);
+        ctx.lineTo(500, 200);
+        ctx.lineTo(600, 200);
+        ctx.closePath(); 
+        ctx.fillStyle = 'green';
+        ctx.fill(); 
+        cxt.beginPath();
+        cxt.moveTo(40,50);
+        cxt.lineTo(48,)
+    </script>
+</body>
+</html> 
